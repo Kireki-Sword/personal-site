@@ -28,32 +28,34 @@
     <main style="flex: 1; padding: 80px 40px 40px;">
         <h1 style="font-family: 'Playfair Display', serif; font-size: 55px; margin-bottom: 8px; text-align: center;">CONTACT</h1>
         <p style="font-family: 'Raleway', sans-serif; font-size: 25px; line-height: 1.6; color: #555; text-align: center; max-width: 600px; margin: 0 auto;">Email: manjotsinghdh2007@gmail.com</p>
-        <p style="font-family: 'Raleway', sans-serif; font-size: 25px; line-height: 1.6; color: #555; text-align: center; max-width: 600px; margin: 0 auto;margin-bottom: 20px;">Phone: 672-667-4344</p>
+        <p style="font-family: 'Raleway', sans-serif; font-size: 25px; line-height: 1.6; color: #555; text-align: center; max-width: 600px; margin: 0 auto;margin-bottom: 20px;">Phone: 672-667-8764</p>
         <p style="font-family: 'Raleway', sans-serif; font-size: 18px; line-height: 1.6; color: #555; text-align: center; max-width: 600px; margin: 0 auto;">Feel free to reach out if you want to meet, work together, need help, or simply want to talk.</p>
     </main>
 
     <hr style="margin: 0;">
 
-    <form action="contact.html" method="POST">
-        <label for="name" style="margin: 0 auto;">Name</label><br>
-        <input id="name" name="name" type="text"  required style="margin: 0 auto;"><br><br>
+    <form action="contact.html" method="POST" style="margin: 0 auto; max-width: 400px;">
 
-        <label for="age" required style="margin: 0 auto;" >Age(must be bettween 18 and 130)</label><br>
-        <input id="age" name="Age" type="number" min="18" max="130" required required style="margin: 0 auto;"><br><br>
+        <label for="name">Name</label><br>
+        <input id="name" name="name" type="text" required><br><br>
 
-        <label for="email" required style="margin: 0 auto;">Email</label><br>
-        <input id="email" name="email" type="email" required style="margin: 0 auto;"><br><br>
+        <label for="age">Age (must be between 18 and 130)</label><br>
+        <input id="age" name="age" type="number" min="18" max="130" required><br><br>
 
-        <label for="tel" required style="margin: 0 auto;">Telephone Number</label><br>
-        <input id="tel" name="telephone_number" type="tel" required style="margin: 0 auto;"><br><br>
+        <label for="email">Email</label><br>
+        <input id="email" name="email" type="email"><br><br>
 
-        <label for="date" required style="margin: 0 auto;">When would you like me to contact you</label><br>
-        <input id="date" name="date" type="date" required style="margin: 0 auto;"><br><br>
+        <label for="tel">Telephone Number</label><br>
+        <input id="tel" name="telephone_number" type="tel"><br><br>
 
-        <label for="msg" required style="margin: 0 auto;">Message</label><br>
-        <textarea id="msg" name="message" rows="5" placeholder="type here" required style="margin: 0 auto;"></textarea><br><br><br>
+        <label for="date">When would you like me to contact you</label><br>
+        <input id="date" name="date" type="date"><br><br>
 
-        <button type="submit" required style="margin: 0 auto;">Send</button><br><br>
+        <label for="msg">Message</label><br>
+        <textarea id="msg" name="message" rows="5" placeholder="type here"></textarea><br><br>
+
+        <button type="submit">Send</button>
+
     </form>
 
 
