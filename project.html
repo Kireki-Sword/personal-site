@@ -29,13 +29,13 @@
         ::-webkit-scrollbar-thumb:hover { background-color: #c084e0;}
         
         
-            
         @media (max-width: 768px) {
-            nav > span{font-size: 18px !important;
-                flex: unset !important;}
-            nav > img{width: 20px  !important; 
-                height: 20px  !important; 
-                margin-right: 5px  !important;}
+            nav > span{font-size: 16px !important;
+                flex: unset !important;
+                }
+            nav > img{width: 30px  !important; 
+                height: 30px  !important; 
+                }
 
             nav{padding: 12px 16px  !important;}
 
@@ -44,12 +44,39 @@
             nav > div:nth-child(3) a {
                 font-size: 14px !important;
                 margin: 0 4px !important;
-                padding: 4px 4px !important;}
+                padding: 4px 4px !important;
+                margin-left: 11px !important;
+            }
 
             nav > div:last-child a {
                 font-size: 14px !important;
                 padding: 6px 12px !important;
-                border-radius: 14px !important;}
+                border-radius: 14px !important;
+                margin-left: 11px;
+            }
+
+            footer {
+                padding: 11px 15px !important;
+            }
+
+            footer > p {
+                font-size: 12px !important;
+            }
+
+            /* show mobile images */
+            .mobile-img1, .mobile-img2 {
+                display: block !important;
+            }
+
+            /* hide desktop image column */
+            .desktop-imgs {
+                display: none !important;
+            }
+
+            main > div {
+                flex-direction: column !important;
+                gap: 24px !important;
+            }
         }
 
     </style>
@@ -80,9 +107,14 @@
 
                 <p style="font-family: 'Raleway', sans-serif; font-size: 16px; line-height: 1.9; color: #333; max-width: 750px;">I am currently working through a 10-week intensive programming accelerator alongside two of my cousins, guided by my uncle who designed the entire roadmap and curriculum for us. The goal we set for ourselves is straightforward, by the end of these 10 weeks, we want to reach the equivalent level of someone who has completed a one-year certificate in computer science.</p>
                 <p style="font-family: 'Raleway', sans-serif; font-size: 16px; line-height: 1.9; color: #333; max-width: 750px;">The first week was not about writing code right away. It was about understanding how things actually work — how computers process information, how the internet functions behind the scenes, and how professional developers think and approach problems. From there we moved into the terminal, Git, GitHub, and the version control workflows that real software teams use every day. The week wrapped up with HTML, semantic web structure, and deploying a live website through GitHub Pages.</p>
+
+                <img class="mobile-img1" src="https://i.pinimg.com/736x/02/fa/68/02fa68a20cba345e29614f728ed4b7cf.jpg" alt="Image" style="display:none; width:100%; height:220px; border-radius:20px;">
+
                 <p style="font-family: 'Raleway', sans-serif; font-size: 16px; line-height: 1.9; color: #333; max-width: 750px;">The project for this first week was to build a personal website using only HTML — the one you are reading right now. Every week comes with its own project, something concrete that puts what we learned that week into practice.</p>
                 <p style="font-family: 'Raleway', sans-serif; font-size: 16px; line-height: 1.9; color: #333; max-width: 750px;">One week down. Nine to go.</p>
                 <p style="font-family: 'Raleway', sans-serif; font-size: 16px; line-height: 1.9; color: #333; max-width: 750px;">What I am working toward over the next 9 weeks:</p>
+
+                <img class="mobile-img2" src="https://i.pinimg.com/736x/96/5a/12/965a12e05d509e0d72bcde84d1dabdcd.jpg" alt="Image" style="display:none; width:100%; height:220px; border-radius:20px;">
 
                 <ul>
                     <li>Learn JavaScript and CSS to build more interactive, functional, and visually polished websites</li>
@@ -93,7 +125,7 @@
                 </ul>
 
             </div>
-            <div style="display: flex; flex-direction:column; gap: 30px;">
+            <div class="desktop-imgs" style="display: flex; flex-direction:column; gap: 30px;">
                 <img src="https://i.pinimg.com/736x/02/fa/68/02fa68a20cba345e29614f728ed4b7cf.jpg" alt="Image" style="width: 375px;height: 325px; border-radius: 40px;">
                 <img src="https://i.pinimg.com/736x/96/5a/12/965a12e05d509e0d72bcde84d1dabdcd.jpg" alt="Image" style="width: 375px;height: 325px; border-radius: 40px;">
             </div>
