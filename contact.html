@@ -26,12 +26,52 @@
         ::-webkit-scrollbar-thumb {background-color: #6b2d8b;border-radius: 10px;}
         ::-webkit-scrollbar-thumb:hover { background-color: #c084e0;}
 
+        input, textarea {
+            border: 1.5px solid rgba(107, 45, 139, 0.3);
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 15px;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.7);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input:focus, textarea:focus {
+            border: 1.5px solid #c084e0;
+            box-shadow: 0 0 8px rgba(192, 132, 224, 0.35);
+        }
+
+        label {
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
+            color: #6b2d8b;
+        }
+
+        button {
+            background-color: #6b2d8b;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 32px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #c084e0;
+        }
+
         @media (max-width: 768px) {
-            nav > span{font-size: 18px !important;
-                flex: unset !important;}
-            nav > img{width: 20px  !important; 
-                height: 20px  !important; 
-                margin-right: 5px  !important;}
+            nav > span{font-size: 16px !important;
+                flex: unset !important;
+                }
+            nav > img{width: 30px  !important; 
+                height: 30px  !important; 
+                }
 
             nav{padding: 12px 16px  !important;}
 
@@ -40,13 +80,26 @@
             nav > div:nth-child(3) a {
                 font-size: 14px !important;
                 margin: 0 4px !important;
-                padding: 4px 4px !important;}
+                padding: 4px 4px !important;
+                margin-left: 11px !important;
+            }
 
             nav > div:last-child a {
                 font-size: 14px !important;
                 padding: 6px 12px !important;
-                border-radius: 14px !important;}
-        }
+                border-radius: 14px !important;
+                margin-left: 11px;
+            }
+
+            footer {
+                padding: 11px 15px !important;
+            }
+
+            footer > p {
+                font-size: 12px !important;
+            }
+
+        } 
 
     </style>
     
@@ -77,29 +130,31 @@
 
     <hr style="margin: 0px;">
 
-    <form action="contact.html" method="POST" style="margin: 0 auto; max-width: 400px; text-align: center;padding: 50px 0;">
+    <form action="contact.html" method="POST" style="margin: 0 auto; max-width: 400px; text-align: center; padding: 50px 0;">
 
         <label for="name">Name</label><br>
-        <input id="name" name="name" type="text" required style="width: 100%;"><br><br>
+        <input id="name" name="name" type="text" required><br><br>
 
         <label for="age">Age (must be between 18 and 130)</label><br>
-        <input id="age" name="age" type="number" min="18" max="130" required style="width: 100%;"><br><br>
+        <input id="age" name="age" type="number" min="18" max="130" required><br><br>
 
         <label for="email">Email</label><br>
-        <input id="email" name="email" type="email" style="width: 100%;"><br><br>
+        <input id="email" name="email" type="email"><br><br>
 
         <label for="tel">Telephone Number</label><br>
-        <input id="tel" name="telephone_number" type="tel" style="width: 100%;"><br><br>
+        <input id="tel" name="telephone_number" type="tel"><br><br>
 
         <label for="date">When would you like me to contact you</label><br>
-        <input id="date" name="date" type="date" style="width: 100%;"><br><br>
+        <input id="date" name="date" type="date"><br><br>
 
         <label for="msg">Message</label><br>
-        <textarea id="msg" name="message" rows="5" placeholder="type here(max 500 character)" maxlength="500" style="width: 100%;"></textarea><br><br>
+        <textarea id="msg" name="message" rows="5" placeholder="type here(max 500 character)" maxlength="500"></textarea><br><br>
 
-        <button type="submit";padding: 40px 0 >Send</button>
+        <button type="submit">Send</button>
 
     </form>
+
+
 
 
 
